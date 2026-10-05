@@ -1,0 +1,16 @@
+[package]
+name = "lwe-layerd"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "linux-wallpaperengine"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+signal-hook = "0.3"
+nix = { version = "0.31", features = ["process", "signal"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.9"
